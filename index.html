@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <title>很久以前羊肉串</title>
     <style>
+        /* 响应式设计 */
+        @media screen and (max-width: 600px) {
+            /* 当屏幕宽度小于600px时，修改样式 */
+            .large-button {
+                font-size: 20px; /* 减小按钮字体大小 */
+            }
+        }
+
         /* CSS 样式 */
         .image-container {
             text-align: center;
             margin-top: 50px;
         }
 
-        /* 修改按钮的大小 */
         .large-button {
-            font-size: 30px; 
+            font-size: 30px;
         }
-
     </style>
 </head>
 <body>
@@ -28,7 +34,6 @@
     <button id="button4" class="large-button">离座勿收</button>
 
     <script>
-        //显示不同的图片
         const imageElement = document.getElementById('image-display');
         const button1 = document.getElementById('button1');
         const button2 = document.getElementById('button2');
@@ -36,19 +41,19 @@
         const button4 = document.getElementById('button4');
 
         button1.addEventListener('click', function() {
-            imageElement.src = '免打扰.jpg'; // 替换为第一个图片的文件路径
+            imageElement.src = '免打扰.jpg';
         });
 
         button2.addEventListener('click', function() {
-            imageElement.src = '喜欢安静.jpg'; // 替换为第二个图片的文件路径
+            imageElement.src = '喜欢安静.jpg';
         });
 
         button3.addEventListener('click', function() {
-            imageElement.src = '我是社牛.jpg'; // 替换为第三个图片的文件路径
+            imageElement.src = '我是社牛.jpg';
         });
 
         button4.addEventListener('click', function() {
-            imageElement.src = '离座勿收.jpg'; // 替换为第四个图片的文件路径
+            imageElement.src = '离座勿收.jpg';
         });
     </script>
 </body>
