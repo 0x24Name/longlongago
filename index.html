@@ -28,10 +28,11 @@
         <img id="image-display" src="/首页.jpg" alt="图片将在这里显示">
     </div>
 
-    <button id="button1" class="large-button">免打扰</button>
-    <button id="button2" class="large-button">喜欢安静</button>
-    <button id="button3" class="large-button">我是社牛</button>
-    <button id="button4" class="large-button">离座勿收</button>
+    <button id="button1" class="large-button">首页</button>
+    <button id="button2" class="large-button">免打扰</button>
+    <button id="button3" class="large-button">喜欢安静</button>
+    <button id="button4" class="large-button">我是社牛</button>
+    <button id="button5" class="large-button">离座勿收</button>
 
     <script>
         const imageElement = document.getElementById('image-display');
@@ -39,20 +40,25 @@
         const button2 = document.getElementById('button2');
         const button3 = document.getElementById('button3');
         const button4 = document.getElementById('button4');
+        const button5 = document.getElementById('button5');
 
         button1.addEventListener('click', function() {
-            imageElement.src = '免打扰.jpg';
+            imageElement.src = '首页.jpg';
         });
 
         button2.addEventListener('click', function() {
-            imageElement.src = '喜欢安静.jpg';
+            imageElement.src = '免打扰.jpg';
         });
 
         button3.addEventListener('click', function() {
-            imageElement.src = '我是社牛.jpg';
+            imageElement.src = '喜欢安静.jpg';
         });
 
         button4.addEventListener('click', function() {
+            imageElement.src = '我是社牛.jpg';
+        });
+
+        button5.addEventListener('click', function() {
             imageElement.src = '离座勿收.jpg';
         });
     </script>
