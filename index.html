@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>很久以前羊肉串</title>
+    <style>
+        /* CSS 样式 */
+        .image-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* 修改按钮的大小 */
+        .large-button {
+            font-size: 30px; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img id="image-display" src="/首页.jpg" alt="图片将在这里显示">
+    </div>
+
+    <button id="button1" class="large-button">免打扰</button>
+    <button id="button2" class="large-button">喜欢安静</button>
+    <button id="button3" class="large-button">我是社牛</button>
+    <button id="button4" class="large-button">离座勿收</button>
+
+    <script>
+        //显示不同的图片
+        const imageElement = document.getElementById('image-display');
+        const button1 = document.getElementById('button1');
+        const button2 = document.getElementById('button2');
+        const button3 = document.getElementById('button3');
+        const button4 = document.getElementById('button4');
+
+        button1.addEventListener('click', function() {
+            imageElement.src = '免打扰.jpg'; // 替换为第一个图片的文件路径
+        });
+
+        button2.addEventListener('click', function() {
+            imageElement.src = '喜欢安静.jpg'; // 替换为第二个图片的文件路径
+        });
+
+        button3.addEventListener('click', function() {
+            imageElement.src = '我是社牛.jpg'; // 替换为第三个图片的文件路径
+        });
+
+        button4.addEventListener('click', function() {
+            imageElement.src = '离座勿收.jpg'; // 替换为第四个图片的文件路径
+        });
+    </script>
+</body>
+</html>
